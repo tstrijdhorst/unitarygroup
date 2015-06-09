@@ -16,4 +16,4 @@ $baseNumber = $argv[1];
 $generator = new \Services\UnitaryGenerator($baseNumber);
 $uGroup = $generator->generate();
 
-echo 'U('.$baseNumber.') = ('.implode($uGroup,',').')';
+echo 'U('.$baseNumber.') = {'.implode($uGroup,',').'}';
